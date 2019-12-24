@@ -13,10 +13,16 @@
 // Raw Routing
 // https://www.kitura.io/docs/routing/raw-routing
 
+// Swift Kuery ORM
+// https://www.kitura.io/docs/databases/orm
+// brew install postgresql // apt install libpq-dev; sudo -u postgres -i
+
 import Dispatch
 import Kitura
 import KituraOpenAPI
 import LoggerAPI
+import SwiftKueryORM
+import SwiftKueryPostgreSQL
 
 public class App {
 
@@ -27,7 +33,8 @@ public class App {
 	public init() throws {}
 
 	func postInit() throws {
-		initializeCodableRoutes(app: self)
+        initializeORMRoutes(app: self)
+        initializeCodableRoutes(app: self)
         initializeRawRoutes(app: self)
         KituraOpenAPI.addEndpoints(to: router)
 	}

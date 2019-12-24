@@ -8,7 +8,7 @@ import Application
 import HeliumLogger
 import LoggerAPI
 
-HeliumLogger.use(.entry)
+HeliumLogger.use(.debug)
 
 do {
 	let app = try App()

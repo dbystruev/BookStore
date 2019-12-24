@@ -5,9 +5,9 @@ import KituraContracts  // for RequestError
 import LoggerAPI
 
 func initializeCodableRoutes(app: App) {
-    app.router.post("/books", handler: app.postHandler)
-    app.router.get("/books", handler: app.getAllHandler)
-    app.router.get("/books", handler: app.getOneHandler)
+    app.router.post("/codable", handler: app.postHandler)
+    app.router.get("/codable", handler: app.getAllHandler)
+    app.router.get("/codable", handler: app.getOneHandler)
 }
 
 extension App {
