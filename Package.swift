@@ -22,14 +22,15 @@ let package = Package(
 	.package(url: "https://github.com/IBM-Swift/HeliumLogger.git", from: "1.9.0"),
         .package(url: "https://github.com/IBM-Swift/Kitura", from: "2.9.1"),
         .package(url: "https://github.com/IBM-Swift/Kitura-OpenAPI.git", from: "1.3.0"),
-        .package(url: "https://github.com/IBM-Swift/Swift-Kuery-ORM.git", from: "0.6.1"),
         .package(url: "https://github.com/IBM-Swift/Kitura-Session.git", from: "3.3.4"),
+        .package(url: "https://github.com/IBM-Swift/Kitura-CredentialsHTTP.git", from: "2.1.3"),
+        .package(url: "https://github.com/IBM-Swift/Swift-Kuery-ORM.git", from: "0.6.1"),
         .package(url: "https://github.com/IBM-Swift/Swift-Kuery-PostgreSQL.git", from: "2.1.1"),
     ],
     targets: [
         .target(name: "BookStore", dependencies: [.target(name: "Application")]),
         .target(name: "Application", dependencies: [
-            "HeliumLogger", "Kitura", "KituraOpenAPI", "SwiftKueryORM", "KituraSession", "SwiftKueryPostgreSQL"
+            "CredentialsHTTP", "HeliumLogger", "Kitura", "KituraOpenAPI", "KituraSession", "SwiftKueryORM", "SwiftKueryPostgreSQL"
         ]),
         .testTarget(name: "ApplicationTests", dependencies: [.target(name: "Application")]),
     ]

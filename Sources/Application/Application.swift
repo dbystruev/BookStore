@@ -33,10 +33,11 @@ public class App {
 	public init() throws {}
 
 	func postInit() throws {
-        initializeORMRoutes(app: self)
+        initializeAuthRoutes(app: self)
         initializeCodableRoutes(app: self)
+        initializeORMRoutes(app: self)
         initializeRawRoutes(app: self)
-        initializeTypeSafeSessionRoutes(app: self)
+        initializeSessionRoutes(app: self)
         KituraOpenAPI.addEndpoints(to: router)
 	}
 

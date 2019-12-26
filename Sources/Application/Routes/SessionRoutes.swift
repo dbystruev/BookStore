@@ -1,5 +1,5 @@
 //
-//  TypeSafeSessionRoutes.swift
+//  SessionRoutes.swift
 //  Application
 //
 //  Created by Denis Bystruev on 26.12.2019.
@@ -10,7 +10,7 @@
 import KituraContracts
 import KituraSession
 
-func initializeTypeSafeSessionRoutes(app: App) {
+func initializeSessionRoutes(app: App) {
     app.router.get("/cart", handler: app.getSessionHandler)
     app.router.post("/cart", handler: app.postSessionHandler)
 }

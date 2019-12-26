@@ -7,3 +7,5 @@
 * [OpenAPI](https://www.kitura.io/docs/routing/kitura-openapi)
 * [Raw Routing](https://www.kitura.io/docs/routing/raw-routing)
 * [Swift Kuery ORM](https://www.kitura.io/docs/databases/orm)
+* [Codable Routing Session](https://www.kitura.io/docs/sessions/codable-session)
+* [Basic Authentication](https://www.kitura.io/docs/authentication/basic-authentication)
