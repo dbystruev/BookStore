@@ -36,6 +36,7 @@ public class App {
         initializeORMRoutes(app: self)
         initializeCodableRoutes(app: self)
         initializeRawRoutes(app: self)
+        initializeTypeSafeSessionRoutes(app: self)
         KituraOpenAPI.addEndpoints(to: router)
 	}
 

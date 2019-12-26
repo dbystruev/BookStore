@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "Cryptor",
+        "repositoryURL": "https://github.com/IBM-Swift/BlueCryptor.git",
+        "state": {
+          "branch": null,
+          "revision": "12d2bf3ec7207ec3cd004b9582f69ef5fae1da3b",
+          "version": "1.0.32"
+        }
+      },
+      {
         "package": "Socket",
         "repositoryURL": "https://github.com/IBM-Swift/BlueSocket.git",
         "state": {
@@ -71,6 +80,15 @@
           "branch": null,
           "revision": "f8cffe163cc75de00cb187c6df06afcb5ed26508",
           "version": "1.3.0"
+        }
+      },
+      {
+        "package": "Kitura-Session",
+        "repositoryURL": "https://github.com/IBM-Swift/Kitura-Session.git",
+        "state": {
+          "branch": null,
+          "revision": "b7c3476e588c8902f067ea89b87db65f242401b4",
+          "version": "3.3.4"
         }
       },
       {
